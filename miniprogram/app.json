@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/initial/initial",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/create/create",
+    "pages/join/join",
+    "pages/discuss/discuss",
+    "pages/idea/idea"
+  ],
+  "entryPagePath": "pages/initial/initial",
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "群讨论",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#13227a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "我创建的"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "我加入的"
+      }
+    ]
+    }
+}

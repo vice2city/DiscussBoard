@@ -1,0 +1,116 @@
+/* pages/discuss/discuss.wxss */
+.title{
+  color: white;
+  background-image: linear-gradient(#4A77D2, white);
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.maintitle{
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px gray;
+  border-bottom: 3px solid;
+  text-align: center;
+}
+
+.description{
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 2px gray;
+}
+
+.stext{
+  font-size: 12px;
+  position: absolute;
+  right: 45px;
+  bottom: 5px;
+}
+
+.avatar{
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+.buttons{
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.joinbutton{
+  flex: 1;
+  background-color: #4A77D2;
+  border-radius: 5px; 
+  color: white;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.sharebutton{
+  flex: 0.5;
+  color: white;
+  background-color: #98B2E5;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.board{
+  margin: 20px;
+  padding: 10px;
+  border: 3px solid #4A77D2;
+  border-radius: 10px; 
+  box-shadow: 2px 2px 2px #4A77D2;
+  background-color: #d8e4fc;
+}
+
+.idea{
+  font-size: 20px;
+  border-bottom: 3px solid;
+}
+
+.options{
+  position: relative;
+  height: 50px;
+}
+
+.proposer-avatar{
+  width:30px;
+  position: absolute;
+  border-radius: 30px;
+  bottom: 0px;
+}
+
+.liked-image{
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 2px grey;
+}
+
+.unliked-image{
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  border-radius: 30px;
+  background-color: #4A77D2;
+  box-shadow: 0px 2px 2px grey;
+}
+
+.like-num{
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  font-size: 12px;
+}

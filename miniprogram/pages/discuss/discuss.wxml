@@ -1,0 +1,41 @@
+<wxs module="m1">
+  function fn(arr, arg) {
+    var result = {
+      indexOf: false,
+      toString: ''
+    }
+    result.indexOf = arr.indexOf(arg) > -1;
+    result.toString = arr.join(",");
+    return result;
+  }
+  module.exports.fn = fn;
+</wxs>
+
+<!--pages/discuss/discuss.wxml-->
+<view class="title">
+  <view class="maintitle">{{discussDetail.name}}</view>
+  <view class="description">
+    <view style="word-wrap: break-word">{{discussDetail.description}}</view>
+    <view style="position: relative; height:50px;">
+      <view class="stext">创建者</view>
+      <image class="avatar" mode="widthFix" src="{{discussDetail.creator.avatarUrl}}"></image>
+    </view>
+  </view>
+</view>
+
+<view class="buttons">
+  <button class="joinbutton" bindtap="joinDiscuss">加入讨论</button>
+  <view style="flex: 0.1;"></view>
+  <button class="sharebutton" open-type="share">邀请</button>
+</view>
+
+<view class="board" wx:for="{{discussDetail.discuss}}" wx:for-item="item" wx:for-index="idx" wx:key="index">
+  <view class="idea">{{item.idea}}</view>
+  <view class="content">{{item.content}}</view>
+  <view class="options">
+   <image class="proposer-avatar" mode="widthFix" src="{{item.proposer.avatarUrl}}"></image>
+   <image hidden="{{!m1.fn(item.like, openid).indexOf}}" class="liked-image" mode="widthFix" src="../images/liked.svg" bindtap="onLike" data-id="{{item.ideaid}}"></image>
+   <image hidden="{{m1.fn(item.like, openid).indexOf}}" class="unliked-image" mode="widthFix" src="../images/like.svg" bindtap="onLike" data-id="{{item.ideaid}}"></image>
+   <view class="like-num" >已获得{{item.like.length}}人支持 {{isLiked.idx}} </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/create/create.wxml-->
+<form class="container" bindsubmit="formSubmit" bindreset="formReset">
+  <view class="title">话题概述</view>
+     <input name="discussName" placeholder="简要描述需要讨论的话题" maxlength="15" confirm-type="next" confirm-hold="true"/>
+  <view class="title">详细描述</view>
+  <textarea name="discussDescription" placeholder="给讨论提供一些参考" auto-height="true" confirm-type="done"></textarea>
+  <view class="buttons">
+    <button id="resetButton" form-type="reset">重置</button>
+    <button id="submitButton" form-type="submit">提交</button>
+  </view>
+  
+</form>

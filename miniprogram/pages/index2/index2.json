@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon"
+  },
+  "enablePullDownRefresh" : true,
+  "backgroundColor": "#4A77D2"
+}

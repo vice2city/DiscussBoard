@@ -1,0 +1,12 @@
+<!--pages/join/join.wxml-->
+<form class="container" bindsubmit="formSubmit" bindreset="formReset">
+  <view class="title">发言标题</view>
+     <input name="idea" placeholder="简要概括你的发言" maxlength="15" confirm-type="next" confirm-hold="true"/>
+  <view class="title">详细描述</view>
+  <textarea name="content" placeholder="畅所欲言" auto-height="true" confirm-type="done"></textarea>
+  <view class="buttons">
+    <button id="resetButton" form-type="reset">重置</button>
+    <button id="submitButton" form-type="submit">提交</button>
+  </view>
+  
+</form>

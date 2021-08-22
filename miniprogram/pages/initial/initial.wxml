@@ -1,0 +1,9 @@
+<!--pages/initial/initial.wxml-->
+<view class="container">
+  <view class="mainview">
+   <image id="icon" mode="widthFix" src="../images/icon.svg"></image>
+   <text id="title">群讨论</text>
+   <button class="button" bindtap="onLogin">进入</button>
+   <view class="{{active?'effect-active':'effect'}}"></view>
+  </view>
+</view>

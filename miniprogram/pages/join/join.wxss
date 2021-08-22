@@ -1,0 +1,60 @@
+/* pages/join/join.wxss */
+
+page {
+  background-color: #4A77D2;
+}
+
+.container{
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.title{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input{
+  margin-top: 10px;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px; 
+  padding: 5px 5px 5px;
+  text-overflow: ellipsis;
+}
+
+textarea{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #98B2E5;
+  background-color: white;
+  border-radius: 5px; 
+  padding: 5px 5px 5px;
+  width: auto;
+}
+
+.buttons{
+  display: flex;
+  padding-top: 10px;
+}
+
+#submitButton{
+  flex: 1;
+  background-color: white;
+  border-radius: 5px; 
+  margin-left: 10px;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px;
+}
+
+#resetButton{
+  flex: 0.5;
+  background-color: #98B2E5;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px;
+}

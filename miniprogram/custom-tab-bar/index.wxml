@@ -1,0 +1,8 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="tab-bar">
+  <view class="tab-bar-border"></view>
+  <view wx:for="{{list}}" wx:key="index" class="{{item.isicon?'tab-bar-icon':'tab-bar-item'}}" data-isicon="{{item.isicon}}" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <image class="tab-bar-icon-image" hidden="{{!item.isicon}}" src="../pages/images/create.svg"></image>
+    <view hidden="{{item.isicon}}" class="{{selected === index ? 'item-selected' : 'item-default'}}">{{item.text}}</view>
+  </view>
+</view>

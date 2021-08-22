@@ -1,0 +1,12 @@
+<!--pages/index2/index2.wxml-->
+<view wx:if="{{discussList.length == 0}}" id="tip" >
+<text>这里空无一物。</text>
+</view>
+<view class="container">
+  <view wx:for="{{discussList}}" wx:for-item="item" wx:key="discussid" class="board" bindtap="openDiscuss" bindlongpress="deleteModal" data-id="{{item.discussid}}">
+    <view>
+      <view class="title">{{item.name}}</view>
+      <mp-icon class="icon" type="field" icon="arrow" color="white" size="{{25}}"></mp-icon>
+    </view>
+  </view>
+</view>

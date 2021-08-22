@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#4A77D2",
+  "navigationBarTitleText": "话题",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh" : true,
+  "backgroundColor": "#4A77D2"
+}

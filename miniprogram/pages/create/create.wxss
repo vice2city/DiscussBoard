@@ -1,0 +1,55 @@
+/* pages/create/create.wxss */
+.container{
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.title{
+  letter-spacing: 1px;
+  font-size: 20px;
+  border-bottom: 2px solid;
+}
+
+input{
+  margin-top: 10px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #98B2E5;
+  border-radius: 5px; 
+  padding: 5px 5px 5px;
+  text-overflow: ellipsis;
+}
+
+textarea{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: 2px solid #98B2E5;
+  border-radius: 5px; 
+  padding: 5px 5px 5px;
+  width: auto;
+}
+
+.buttons{
+  display: flex;
+  padding-top: 10px;
+}
+
+#submitButton{
+  flex: 1;
+  background-color: #4A77D2;
+  border-radius: 5px; 
+  margin-left: 10px;
+  color: white;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px gray;
+}
+
+#resetButton{
+  flex: 0.5;
+  color: white;
+  background-color: #98B2E5;
+  font-weight:normal;
+  box-shadow: 2px 2px 2px gray;
+}
